@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "microsoft_graph"
-  spec.version       = MicrosoftGraph::VERSION
+  spec.version       = "0.1.2"
   spec.authors       = ["Katie Miller", "Neal Lindsay"]
   spec.email         = ["katie@testdouble.com", "neal@testdouble.com"]
 
