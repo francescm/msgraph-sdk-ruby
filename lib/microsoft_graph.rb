@@ -14,7 +14,11 @@ class MicrosoftGraph
 
   def initialize(options = {}, &auth_callback)
     @service = OData::Service.new(
-      base_url: BASE_URL,
+      base_url: if options[:base_url]
+                  options[:base_url]
+                else
+                  BASE_URL
+                end,
       metadata_file: options[:cached_metadata_file],
       auth_callback: auth_callback
     )
