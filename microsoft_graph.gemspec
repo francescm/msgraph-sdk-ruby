@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-#require 'microsoft_graph/version'
+require 'microsoft_graph/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "microsoft_graph"
-  spec.version       = "0.1.2"
+  spec.version       = MicrosoftGraph::VERSION
   spec.authors       = ["Katie Miller", "Neal Lindsay"]
   spec.email         = ["katie@testdouble.com", "neal@testdouble.com"]
 
